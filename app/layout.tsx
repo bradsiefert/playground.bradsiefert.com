@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
-import "./globals.css";
+import { Source_Sans_3 } from "next/font/google";
+import "./assets/index.css";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const sourceSans3 = Source_Sans_3({
+  subsets: ['latin'],
+  variable: '--font-sans',
 });
 
 export const metadata: Metadata = {
@@ -25,10 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={sourceSans3.variable}>
+      <body className="antialiased">
         {children}
       </body>
     </html>
