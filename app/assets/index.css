@@ -14,4 +14,13 @@
   }
 }
 
+.code-panel-grid {
+  transition: grid-template-rows 200ms ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .code-panel-grid {
+    transition-duration: 0ms;
+  }
+}
+
 
