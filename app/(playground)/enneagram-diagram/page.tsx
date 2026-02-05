@@ -115,7 +115,7 @@ const code = `export default function Page() {
     >
       <div className="flex items-center justify-center min-h-[400px] text-foreground">
         <Card>
-          <CardContent className="flex justify-center pt-6 pb-6">
+          <CardContent className="flex justify-center">
             <EnneagramSvg />
           </CardContent>
         </Card>
@@ -133,7 +133,7 @@ export default function Page() {
     >
       <div className="flex items-center justify-center min-h-[400px] text-foreground">
         <Card>
-          <CardContent className="flex justify-center pt-6 pb-6">
+          <CardContent className="flex justify-center">
             <EnneagramSvg />
           </CardContent>
         </Card>
